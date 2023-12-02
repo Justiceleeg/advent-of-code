@@ -5,16 +5,11 @@ pub fn process(input: &str) -> String {
 }
 
 fn process_line(input: &str) -> u32 {
-    let input = input
-        .replace("one", "1")
-        .replace("two", "2")
-        .replace("three", "3")
-        .replace("four", "4")
-        .replace("five", "5")
-        .replace("six", "6")
-        .replace("seven", "7")
-        .replace("eight", "8")
-        .replace("nine", "9");
+    // scan
+    // pattern match and return if pattern found
+    // scan in reverse
+    // pattern match and return if pattern found
+
     let numeric_input = input.chars().filter(|c| c.is_numeric());
     let mut first_num = numeric_input.clone().take(1).collect::<String>();
     let last_num = numeric_input.rev().take(1).collect::<String>();
